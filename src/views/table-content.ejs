@@ -1,0 +1,29 @@
+<div class="table-wrapper content-container" name="table-content">
+    <h3 class="main-title">Tabla de datos</h3>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID RUTA</th>
+                    <th>Ruta</th>
+                    <th>Agregar</th>
+                    <th>Editar</th>
+                    <th>PDF</th>
+                    <th>PDF (ST)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% rutas.forEach((ruta)=>{ %>
+                <tr>
+                    <td><%= ruta.IDRUTA %></td>
+                    <td><%= ruta.NOMBRER %></td>
+                    <td><a id="<%= ruta.IDRUTA %>" class="btn btn-outline-primary" onclick="sendId('order-content', '<%= ruta.IDRUTA %>')">AGREGAR PEDIDO</a></td>
+                    <td><a id="<%= ruta.IDRUTA %>" class="btn btn-outline-primary" onclick="sendIdTable('order-table', '<%= ruta.IDRUTA %>')">EDITAR</a></td>
+                    <td><a href="/pdf/<%= id %>/<%= ruta.IDRUTA %>/1" id="<%= ruta.IDRUTA %>" class="btn btn-outline-danger">GENERAR PDF</a></td>
+                    <td><a href="/pdf/<%= id %>/<%= ruta.IDRUTA %>/2" id="<%= ruta.IDRUTA %>" class="btn btn-outline-danger">GENERAR PDF (ST)</a></td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>

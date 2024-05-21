@@ -1,0 +1,21 @@
+<div class="content-container" name="order-edit" style="display: none;">
+    <form action="/order/edit/<%= id %>" method="post">
+        <div class="card-container">
+            <div class="card-header">
+                <h3>Llene los siguientes campos</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <input id="idOrder" name="idOrder" type="hidden" value="" class="form-control">
+                </div>
+                <div class="form-group mb-2">
+                    <label><b>Nombre:</b></label>
+                    <input id="nombre" name="nombre" type="text" class="form-control" required>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-success mt-3">Guardar</button>
+            </div>
+        </div>
+    </form>
+</div>

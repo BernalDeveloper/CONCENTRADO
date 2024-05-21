@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="/css/concentrados.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYLknVci17eLkgEYZ0H2OqKBCy_sk0pbM&libraries=places&callback=initAutocomplete" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="main">
+            <li class="active" onclick="showHTML('table-content')">
+                <a href="#">
+                    <i class="fas fa-list"></i>
+                    <span>Rutas</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="showHTML('new-content')">
+                    <i class="fas fa-plus"></i>
+                    <span>Nuevo</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="/">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Log out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <span>Second</span>
+                <h2>Concentrado V1.2</h2>
+            </div>
+            <div class="user-info">
+                <div class="search-box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <img src="/img/perfil.png" alt="">
+            </div>
+        </div>
+        <%- include('messages-content') %>
+        <%- include('table-content') %>
+        <%- include('order-table') %>
+        <%- include('order-content') %>
+        <%- include('order-edit') %>
+        <%- include('new-content') %>
+	</div>
+    <script src="/js/graphic.js"></script>
+</body>
+</html>

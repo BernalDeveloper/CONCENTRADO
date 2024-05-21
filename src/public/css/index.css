@@ -1,0 +1,87 @@
+body {
+    background: #222421 url('background-pattern.png') repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.form-signin {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-signin img {
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.form-signin h1 {
+    font-size: 24px;
+}
+
+.form-signin label {
+    display: none;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.btn-primary {
+    background-color: #084063;
+    margin: 1%;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #084063;
+}
+
+.additional-image {
+    max-width: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    color: #555;
+}
+
+.animated-input {
+    transition: all 0.3s ease-in-out;
+    padding-left: 35px;
+}
+
+.animated-input:focus {
+    border-color: #084063;
+    box-shadow: 0 0 5px rgba(4, 64, 98, 0.5);
+}

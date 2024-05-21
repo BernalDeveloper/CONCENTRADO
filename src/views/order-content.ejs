@@ -1,0 +1,25 @@
+<div class="content-container" name="order-content" style="display: none;">
+    <form action="/home/<%= id %>" method="post">
+        <div class="card-container">
+            <div class="card-header">
+                <h3>Llene los siguientes campos</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <input id="idRuta" name="idRuta" type="hidden" value="" class="form-control">
+                </div>
+                <div class="form-group mb-2">
+                    <label><b>Folio:</b></label>
+                    <input id="folio" name="folio" type="text" class="form-control" required>
+                </div>
+                <div class="form-group mb-2">
+                    <label><b>Población:</b></label>
+                    <input id="poblacion" name="poblacion" type="text" class="form-control" required>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-success mt-3">Guardar</button>
+            </div>
+        </div>
+    </form>
+</div>
