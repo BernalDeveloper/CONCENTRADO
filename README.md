@@ -10,3 +10,5 @@ Desarrollo web para la automatización de un proceso administrativo interno crea
 [![CON-3.png](https://i.postimg.cc/YCJGgBh1/CON-3.png)](https://postimg.cc/gxH2F5yJ)
 
 [![CON-4.png](https://i.postimg.cc/wTj04LFw/CON-4.png)](https://postimg.cc/c6PRrKp3)
+
+[![CON-2.png](https://i.postimg.cc/DwymRQMY/CON-2.png)](https://postimg.cc/XpmVC53w)
